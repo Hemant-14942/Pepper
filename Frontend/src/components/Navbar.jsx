@@ -7,15 +7,14 @@ function Navbar() {
         <div>
          <span className="font-logo text-3xl text-pink-red font-bold">Pepper</span>
         </div>
-        <div className="flex gap-10">
-          <span className="font-bold">Home</span>
-          <span className="font-bold">Menu</span>
-          <span className="font-bold">About Us</span>
-          <span className="font-bold">Contact</span>
+        <div className="flex gap-10 ">
+          <span className="font-semibold text-lg">Home</span>
+          <span className="font-semibold text-lg">Menu</span>
+          <span className="font-semibold text-lg">About Us</span>
+          <span className="font-semibold text-lg">Contact</span>
         </div>
         <div className="flex gap-6">
-          <Button variant="outline">Login</Button>
-          <Button className="bg-purple-700">Signup</Button>
+          <Button className="px-4 py-6 font-semibold text-gray text-md" variant="outline">SignUp/Login</Button>
         </div>
       </nav>
     </div>
