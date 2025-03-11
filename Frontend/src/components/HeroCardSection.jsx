@@ -43,7 +43,7 @@ const HeroCardSection = () => {
               <div className="btnprice flex justify-between items-center w-full mt-4">
                 <button
                   type="button"
-                  className="px-2 bg-white rounded-full text-2xl"
+                  className="px-4 py-2 bg-white rounded-full text-lg font-bold"
                 >
                   order now
                 </button>
