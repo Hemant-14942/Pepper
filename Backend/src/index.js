@@ -3,6 +3,8 @@ import cors from "cors"
 import "dotenv/config"
 import cookieParser from "cookie-parser"
 import connectDB from "./db/index.js";
+import userRouter from "./routes/user.route.js";
+import connectCloudinary from "./utils/cloudinary.js";
 
 const app = express();
 
@@ -17,6 +19,8 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(cookieParser())
 
+connectCloudinary()
+
 connectDB().then(()=>{
     app.listen(port,(req,res)=>{
         console.log(`⚙️ Server is running at port : ${port}`);
@@ -26,7 +30,8 @@ connectDB().then(()=>{
     console.log("MONGO db connection failed !!! ", err);
 })
 
-
 app.get('/',(req,res)=>{
     res.send('Hello from Server')
 })
+
+app.use('/api/user',userRouter)

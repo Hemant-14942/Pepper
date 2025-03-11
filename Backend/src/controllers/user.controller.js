@@ -1,4 +1,4 @@
-import userModel from "../models/user.model";
+import userModel from "../models/user.model.js";
 import validator from "validator";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
@@ -121,7 +121,7 @@ const updateUser = async (req, res) => {
     let updateData = { name, gender, dob, phone, address };
 
     if (imageFile) {
-      const imageUpload = await cloudinary.uploader.upload(imageFile.path, { resource_type: "image" });
+      const imageUpload = await cloudinary.uploader.upload(imageFile.path, { resource_type: "image" })
       updateData.image = imageUpload.secure_url;
     }
 
@@ -149,6 +149,5 @@ const updateUser = async (req, res) => {
     return res.status(500).json({ success: false, message: "Internal Server Error", error: error.message });
   }
 };
-
 
 export { registerUser, loginUser,updateUser };
