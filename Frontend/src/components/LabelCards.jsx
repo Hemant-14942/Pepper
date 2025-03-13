@@ -1,12 +1,12 @@
 import React from 'react';
 
-const LabelCards = () => {
+const LabelCards = ({image}) => {
   return (
-    <div className="rounded-4xl overflow-hidden shadow-sm bg-white p-2">
+    <div className="rounded-3xl overflow-hidden shadow-sm bg-white p-2">
       <div className="flex justify-center items-start ">
         <img
-          src="/assets/pepproni.png"
-          alt="Pepperoni Popper"
+          src={image}
+          alt="Pizza"
           className="w-full h-88 object-contain -mt-4 "
         />
       </div>

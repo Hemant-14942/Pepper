@@ -3,8 +3,8 @@ import HeroCard from "./HeroCard";
 
 const HeroCardSection = () => {
   return (
-    <div className="py-2 mt-22 px-10 w-full">
-      <div className="text flex flex-col items-center gap-7">
+    <div className="mt-20 px-10 w-full">
+      <div className="text flex flex-col items-center gap-6">
           <h1 className="text-5xl font-bold">Hot Pizza, Hotter Deals</h1>
           <p className="text-2xl">
             From family-sized deals to solo slices, find the perfect offer for
@@ -29,7 +29,7 @@ const HeroCardSection = () => {
           />
         </div>
 
-        <div className="flex flex-col items-center max-h-[550px] bg-black rounded-3xl shadow-md overflow-hidden my-7">
+        <div className="flex flex-col items-center max-h-[550px] bg-gray rounded-3xl shadow-md overflow-hidden my-7">
           <div className="w-full px-16 py-10">
             <div className="w-full h-full  flex flex-col gap-9 items-start">
               <h1 className="text-3xl font-bold text-white">Spicy Duo Deal</h1>
