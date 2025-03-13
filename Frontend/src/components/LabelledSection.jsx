@@ -9,7 +9,7 @@ const LabelledSection = () => {
         <div className='font-bold text-5xl text-gray'>Fan Favorites</div>
         <div className='text-xl text-gray'>From classic combinations to bold flavors, these pizzas top our list for a reason.</div>
       </div>
-      <div className='flex justify-center items-center gap-10 w-full px-8'>
+      <div className='flex justify-center items-center gap-10 w-full px-10'>
       <LabelCards/>
       <LabelCards/>
       <LabelCards/>
