@@ -9,7 +9,7 @@ const Dropdown = ({data}) => {
     <>
       <div className="super-box bg-white">
         <div className="box   flex items-center justify-between py-7 px-6  bg-white">
-          <h1 className="text-2xl capitalize">{data?.title}</h1>
+          <h1 className="text-2xl font-bold capitalize">{data?.title}</h1>
           <ChevronDown
             size={29}
             className={`transform transition-transform duration-300 ${
