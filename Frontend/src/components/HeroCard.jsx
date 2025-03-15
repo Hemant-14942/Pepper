@@ -8,6 +8,7 @@ const HeroCard = ({ title, items, price, images,bgcolor }) => {
       <div className="info-cont w-full h-auto px-6 py-5 md:px-12 md:py-10 ">
         <div className="info w-full h-full  flex flex-col gap-9 items-start">
           <h1 className="text-2xl font-bold text-white">{title}</h1>
+
           <ul className="list-disc text-white ml-5">
             {items.map((item, index) => (
               <li key={index} className="text-xl text-white">
@@ -26,6 +27,7 @@ const HeroCard = ({ title, items, price, images,bgcolor }) => {
           </div>
         </div>
       </div>
+
       <div >
         <div className="flex justify-center items-center">
           {images.map((img, index) => (

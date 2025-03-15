@@ -23,7 +23,7 @@ const LabelledSection = ({ data }) => {
         </button>
       </div>
     </div>
-  )
+  );
 }
 
 export default LabelledSection
