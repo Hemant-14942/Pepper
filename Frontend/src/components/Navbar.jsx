@@ -6,7 +6,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center px-6 md:px-10 py-5 bg-white shadow-md">
+    <nav className="w-full flex justify-between items-center px-6 md:px-10 py-5 bg-white shadow-xs">
       <div>
         <span className="font-logo text-3xl text-pink-red font-bold">Pepper</span>
       </div>
@@ -19,8 +19,8 @@ function Navbar() {
       </div>
 
       <div className="hidden md:flex gap-6">
-        <Button className="px-4 py-2 font-semibold text-gray text-md" variant="outline">
-          SignUp/Login
+        <Button className="px-4 py-3 rounded-3xl font-semibold text-gray text-md bg-red-500 hover:text-white hover:bg-red-600 transition transform duration-100 hover:scale-105">
+          Order Now
         </Button>
       </div>
 

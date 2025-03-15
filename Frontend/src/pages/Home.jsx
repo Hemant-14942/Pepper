@@ -3,6 +3,7 @@ import HeroSection from "../components/HeroSection";
 import LabelledSection from "../components/LabelledSection";
 import HeroCardSection from "../components/HeroCardSection";
 import CarouselSection from "../components/CarouselSection";
+import AnimCardsSec from "../components/AnimCardsSec";
 
 const labelledSectionData = [
   {
@@ -43,6 +44,7 @@ const Home = () => {
       <div className="mt-52">
         <LabelledSection data={newLabelledSectionData} />
       </div>
+      <AnimCardsSec/>
       <CarouselSection />
     </div>
   );
