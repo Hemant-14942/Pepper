@@ -5,7 +5,7 @@ const HeroCard = ({ title, items, price, images,bgcolor }) => {
     <div
       className={`flex flex-col items-center w-full max-h-[500px] mb-2 ${bgcolor} rounded-3xl shadow-md overflow-hidden`}
     >
-      <div className="info-cont w-full h-auto px-12 py-10 ">
+      <div className="info-cont w-full h-auto px-6 py-5 md:px-12 md:py-10 ">
         <div className="info w-full h-full  flex flex-col gap-9 items-start">
           <h1 className="text-2xl font-bold text-white">{title}</h1>
           <ul className="list-disc text-white ml-5">
@@ -32,7 +32,7 @@ const HeroCard = ({ title, items, price, images,bgcolor }) => {
             <img
               key={index}
               src={img}
-              className="w-[70%] -mx-10"
+              className="md:w-[70%] -mx-10"
               alt="Pizza"
             />
           ))}

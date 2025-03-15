@@ -6,7 +6,7 @@ import {
   usePrevNextButtons
 } from './CarouselArrowButtons'
 
-const TWEEN_FACTOR_BASE = 0.9
+const TWEEN_FACTOR_BASE = 0.92
 
 const numberWithinRange = (number, min, max) =>
   Math.min(Math.max(number, min), max)
