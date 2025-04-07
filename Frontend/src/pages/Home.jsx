@@ -44,6 +44,7 @@ const Home = () => {
         <LabelledSection data={newLabelledSectionData} />
       </div>
       <CarouselSection />
+    {/* just for checking if all is working good */}
     </div>
   );
 };
