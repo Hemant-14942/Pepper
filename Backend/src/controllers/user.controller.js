@@ -111,7 +111,7 @@ const loginUser = async (req, res) => {
 
 const updateUser = async (req, res) => {
   try {
-    const { name, email, password, gender, dob, phone, address } = req.body;
+    const { name, email, gender, dob, phone, address } = req.body;
     const imageFile = req.file;
 
     if (!validator.isEmail(email)) {
@@ -133,11 +133,7 @@ const updateUser = async (req, res) => {
       updateData.password = await bcrypt.hash(password, salt);
     }
 
-    const updatedUser = await userModel.findOneAndUpdate(
-      { email },
-      { $set: updateData },
-      { new: true, runValidators: true }
-    );
+    const updatedUser = await userModel.findOneAndUpdate({email},updateData)
 
     if (!updatedUser) {
       return res.status(404).json({ success: false, message: "User Not Found" });
@@ -150,4 +146,4 @@ const updateUser = async (req, res) => {
   }
 };
 
-export { registerUser, loginUser,updateUser };
+export { registerUser,loginUser,updateUser };

@@ -139,8 +139,15 @@
   margin-left: auto;
   --slide-height: 28rem;
   --slide-spacing: 1rem;
-  --slide-size: 90%;
+  --slide-size: 98%;
 }
+
+@media (max-width: 768px) { 
+  .embla {
+    max-width: 100%;
+  }
+}
+
 
 .embla__container {
   display: flex;

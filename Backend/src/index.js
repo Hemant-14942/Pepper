@@ -30,8 +30,4 @@ connectDB().then(()=>{
     console.log("MONGO db connection failed !!! ", err);
 })
 
-app.get('/',(req,res)=>{
-    res.send('Hello from Server')
-})
-
-app.use('/api/user',userRouter)
+app.use('/api/user',userRouter) 
