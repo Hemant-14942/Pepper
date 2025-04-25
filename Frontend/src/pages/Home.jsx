@@ -46,6 +46,7 @@ const Home = () => {
       </div>
       <AnimCardsSec/>
       <CarouselSection />
+    {/* just for checking if all is working good */}
     </div>
   );
 };
